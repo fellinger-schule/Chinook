@@ -34,7 +34,7 @@ namespace Chinook.ConApp
 			Console.WriteLine(String.Format("AVG-Time: {0:0.00}", albumTimeStatistic.Avg / 1000));
             Console.WriteLine();
 
-			Console.WriteLine("Album-Zeit-Auswertung");
+			Console.WriteLine("Track-Sale-Auswertung");
 			var trackSaleStatistic = Report.MarketingReports.GetTrackSaleStatistic();
 			Console.WriteLine(String.Format("{0,-60}{1}", "Album/Titel", "Quantity"));
 			Console.WriteLine(String.Format("{0,-60}{1}", trackSaleStatistic.MostSold.Name, trackSaleStatistic.MostNumberSold));

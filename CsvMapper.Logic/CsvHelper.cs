@@ -89,10 +89,7 @@ namespace CsvMapper.Logic
 					}
 					else
 					{
-						try //CSV is broken, some contain delimiter entries during entries which breaks everything
-						{
-							item.SetValue(result, Convert.ChangeType(value, item.PropertyType));
-						} catch(Exception e) { };
+						item.SetValue(result, Convert.ChangeType(value, item.PropertyType));
 					}
 				}
 			}
